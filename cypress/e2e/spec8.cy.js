@@ -1,8 +1,6 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('Adding a role to a student', () => {
     cy.visit('https://dev.profteam.su/')
-
-  // Добавление роли студенту
 
   //Авторизация успешная
 
@@ -19,11 +17,11 @@ describe('template spec', () => {
     cy.wait(1000)
     cy.get('.select-role-form > :nth-child(3)').click()
     cy.log('Роль студента добавлена!')
-    cy.get('.menu-item__name').should('exist')
+    cy.get('[data-v-02661ece=""][data-v-4e40dec7=""] > .form__buttons > .button').should('exist')
 
   //сброс роли студента
 
-  cy.get('[data-v-02661ece=""][data-v-4e40dec7=""] > .form__buttons > .button').click()
+    cy.get('[data-v-02661ece=""][data-v-4e40dec7=""] > .form__buttons > .button').click()
 
-})
+  })
 })

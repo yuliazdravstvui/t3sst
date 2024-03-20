@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('Successful registration', () => {
 
     // успешная регистрация
 
@@ -16,6 +16,7 @@ describe('template spec', () => {
     cy.get(':nth-child(3) > .form-control--medium > .form-input--text').type('Андреевна')
     cy.get(':nth-child(3) > .button').click()
     cy.get('.header-container__user-avatar-info').should('exist')
+    cy.url().should('include', '/account/main')
 
   })
 })

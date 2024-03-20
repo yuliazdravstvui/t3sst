@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('successful reading of notifications', () => {
 
   //базовая успешная авторизация
 
@@ -13,6 +13,8 @@ describe('template spec', () => {
   // cy.wait(2000);
   cy.get(':nth-child(3) > .button').click();
   cy.wait(2000);
+
+  //успешное прочтение уведомлений
 
   cy.get('.header-container__desktop > .notification-bell > .notification-bell__icon__desktop > svg').click()
   cy.get('.header-container__desktop > .notification-bell > .notification-bell__similar > .notifications-similar > .notifications-similar__header > .link').click()

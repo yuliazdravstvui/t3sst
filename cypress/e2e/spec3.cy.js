@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('successful password change', () => {
 
     //базовая успешная авторизация
 

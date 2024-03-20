@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('registration error', () => {
     cy.visit('https://dev.profteam.su/')
     cy.get('[href="/registration"] > .button').click()
 

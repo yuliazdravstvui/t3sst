@@ -1,7 +1,7 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('checking the error message when authorizing a student', () => {
 
-    // проверка вывода об ошбике при авторизации студента
+    // проверка вывода об ошбике при авторизации студента(пустое поле для ввода пароля)
 
     cy.visit('https://dev.profteam.su/')
     cy.get('[href="/login"] > .button').click()
@@ -9,7 +9,6 @@ describe('template spec', () => {
     cy.get('.form-input--text').type('testerStudent')
     cy.get('.form-input--text').clear()
     cy.get('.form-error').should('exist')
-    cy.log('Обязательное поле')
 
   })
 })

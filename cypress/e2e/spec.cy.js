@@ -1,5 +1,5 @@
 describe('template spec', () => {
-  it('passes', () => {
+  it('negative student authorization check', () => {
 
     // негативная проверка авторизации студента
 
