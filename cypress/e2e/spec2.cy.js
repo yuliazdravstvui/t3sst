@@ -22,7 +22,7 @@ describe('template spec', () => {
     cy.get(':nth-child(2) > .form-input--password').type('QWEasd1234')
     cy.get('.form__buttons > div > .button').click();
     cy.wait(2000)
-    cy.get('.form-error > span').should('exist')
+  cy.get('.form-error').should('have.text', 'Пароли не совпадают')
 
   })
 })

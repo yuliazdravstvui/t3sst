@@ -12,6 +12,6 @@ describe('template spec', () => {
     cy.get('.form-input--password').type('password')
     cy.get(':nth-child(3) > .button').click()
 
-    cy.get('.form-error').should('exist')
+    cy.get('.form-error').should('have.text', 'Неверный логин или пароль, попробуйте заново.')
   })
 })

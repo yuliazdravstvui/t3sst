@@ -8,7 +8,7 @@ describe('template spec', () => {
     cy.wait(1000)
     cy.get('.form-input--text').type('testerStudent')
     cy.get('.form-input--text').clear()
-    cy.get('.form-error').should('exist')
+    cy.get('.form-error').should('have.text', 'Обязательное поле, без пробелов')
 
   })
 })
